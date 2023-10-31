@@ -1,4 +1,3 @@
-package consoleproject;
 import java.util.Scanner;
 public class UserAction{
     static String userActivity="";
