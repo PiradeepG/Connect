@@ -35,7 +35,7 @@ public class Client {
         }
 
     }
-    public String getInput(BufferedReader bf){
+    public String getInput(){
         String str="";
         try{
             str=bf.readLine();
@@ -47,12 +47,12 @@ public class Client {
     }
     public void getDetailsFromUser(){
         System.out.println("Enter your Email: ");
-        email=getInput(bf);
+        email=getInput();
         getPasswordFromUser();
     }
     public void getPasswordFromUser(){
         System.out.println("Enter the password for "+email);
-        password=getInput(bf);
+        password=getInput();
     }
     public static void main(String[] args) {
         Client cl=new Client();
