@@ -165,5 +165,6 @@ public class Client {
 
     public static void main(String[] args) {
         Client cl = new Client();
+        System.out.println("hi");
     }
 }
