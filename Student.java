@@ -1,28 +1,11 @@
-public class Student {
-    private String userName;
-    private String email;
-    private String password;
-    public void setUserName(String userName){
-        this.userName=userName;
+public class Student  extends User 
+{
+    Student(String name , String password , String email , boolean isAdmin)
+    {
+        super(name, password, email, isAdmin);
     }
-    public void setEmail(String email){
-        this.email=email;
-    }
-    public void setPassword(String password){
-        this.password=password;
-    }
-    public String getUserName(){
-        return this.userName;
-    }
-    public String getEmail(){
-        return this.email;
-    }
-    public String getPassword(){
-        return this.password;
-    }
-    Student(String userName,String email,String password){
-        this.userName=userName;
-        this.email=email;
-        this.password=password;
+    public void start()
+    {
+            System.out.println("succesfully logined as a teacher");
     }
 }
